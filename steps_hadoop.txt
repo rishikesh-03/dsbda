@@ -1,0 +1,12 @@
+step 1: cd /hadoop/sbin
+step 2: start-dfs.sh
+step 3: start-yarn.sh
+step 4: jps
+step 5:localhost:9870
+step 6: hdfs dfs -mkdir /WordCount1
+step 7: hdfs dfs -mkdir /WordCount1/Input
+step 8: hdfs dfs -put '/home/te/Hadoop_Assignment/Assignment1/input.txt' /WordCount/Input
+step 9: hadoop jar '/home/te/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.5.jar' wordcount /WordCount1/Input /WordCount/Output
+step 10: hdfs dfs -cat /Wordcount1/Output/*
+step 11: stop-dfs.sh
+step 12: stop-yarn.sh
